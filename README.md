@@ -6,3 +6,9 @@ PHP Envirounment: PHP5.x +;
 
 Mysql Enviroument:
 Mysqli Plugin
+
+
+INSTALLATION:
+
+Run this code:
+`npm install php-updater`
