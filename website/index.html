@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Manage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="head">VERSION MANAGEMENT CENTER</div>
+    <div class="body">
+        <div  class="container" style="width: 200px;background-color: transparent;overflow: hidden;">
+            <div class="pagetitle" style="color: white;">
+                APP LIST<button id="add-applist" style="left: 70px;">+</button>
+                <script src="./index.js"></script>
+            </div>
+            <div id="applist" class="container" style="width: 200px;background-color: transparent;">
+            </div>
+        </div>
+        <div class="container" style="width: calc(100vw - 215px);overflow: hidden;" id="rightcon" >
+            <div class="pagetitle">
+                APP INFORMATION<button id="app-save" style="right: calc( 100% - 350px);">Save</button>
+            </div>
+            
+            <div class="appinfo">
+                <div>APP NAME</div>
+                <input id="APPNAME">
+                <div>APP VERSION</div>
+                <input id="APPVER">
+                <div>UPDATE LOG</div>
+                <textarea id="UPDATELOG"></textarea>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script>
+    $.post({
+        url:'https://peercat.cn/api/auto-updater/',
+        data:{
+            REQUEST_ID:1
+        }
+    })
+</script>
+</html>

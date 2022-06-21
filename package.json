@@ -1,0 +1,26 @@
+{
+  "name": "php-updater",
+  "version": "1.0.2",
+  "description": "An auto updater with backend written in PHP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ericple/npm-auto-updater.git"
+  },
+  "keywords": [
+    "update"
+  ],
+  "author": "Peercat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ericple/npm-auto-updater/issues"
+  },
+  "homepage": "https://github.com/Ericple/npm-auto-updater#readme",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "jquery": "^3.6.0"
+  }
+}

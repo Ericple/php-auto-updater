@@ -1,0 +1,131 @@
+:root{
+    /* --maincolor: rgb(82, 172, 255); */
+    --maincolor:rgb(99, 99, 99);
+    --appcardhover: rgba(214, 214, 214, 0.329);
+}
+
+body{
+    margin: 0 auto;
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html{
+    background-color: var(--maincolor);
+}
+
+div.head{
+    height: 60px;
+    width: calc(100vmax-2px);
+    position: relative;
+    line-height: 60px;
+    /* border-bottom: 1px solid; */
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--maincolor);
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+div.body{
+    height: calc(100vh - 60px);
+    width: calc(100vw - 6px);
+    background-color: var(--maincolor);
+}
+
+div.footer{
+    width: calc(100vmax - 2px);
+    height: 110px;
+    border: 1px solid;
+}
+
+div.container{
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid; */
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    
+}
+
+div#rightcon{
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#applist{
+    color: white;
+}
+
+button.appcard{
+    padding: 5px;
+    margin: 10px;
+    width: calc(100% - 30px);
+    height: 45px;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    transition: all 0.3s;
+    user-select: none;
+    color: white;
+}
+
+button.appcard:hover{
+    background-color: var(--appcardhover);
+}
+
+div.appcard span{
+    display: inline-block;
+}
+
+.selected{
+    border-left: 5px solid white;
+    background-color: var(--appcardhover);
+}
+
+
+div.pagetitle{
+    font-size: large;
+    margin: 10px;
+    font-weight: bolder;
+    
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+div.appinfo {
+    padding: 10px;
+}
+textarea#UPDATELOG{
+    width: calc(100vmax - 235px);
+    height: calc(100vh - 255px);
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+button{
+    border: none;
+    cursor: pointer;
+    margin: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: default;
+    transition: all 0.3s;
+    height: 24px;
+    top: -5px;
+    background-color: transparent;
+}
+
+button:hover{
+    background-color: white;
+}
+
+button:active{
+    background-color: rgb(221, 221, 221);
+}
