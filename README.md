@@ -1,4 +1,4 @@
-# npm-auto-updater
+# PHP-AUTO-UPDATER
 An auto updater with backend written in PHP
 
 Server Requirement:
